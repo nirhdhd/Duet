@@ -3,6 +3,8 @@ import { I18nManager, StyleSheet, Text, View } from "react-native";
 import Login from "./components/login";
 import Register from "./components/register";
 import BottomNavbar from "./components/bottom navbar/bottomNavbar";
+import Profile from "./components/profile";
+
 
 //Navigator
 //import Navigator from "./navigation/navigator";
@@ -29,6 +31,7 @@ export default function App() {
     <View style={styles.container}>
       {/* <Login /> */}
       {/* <Register /> */}
+      <Profile />
       {/* <BottomNavbar /> */}
     </View>
   );

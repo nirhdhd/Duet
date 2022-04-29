@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { TextInput } from "react-native-paper";
 import React, { useState } from "react";
+import { ProgressBar, Colors } from "react-native-paper";
 
 const Login = () => {
   const [text, setText] = useState("");
@@ -17,6 +18,7 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
+      <ProgressBar progress={0.5} color={Colors.red800} />
       <View style={styles.mDiv}>
         <Text style={styles.title}>דואט</Text>
         <TextInput
